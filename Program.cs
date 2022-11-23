@@ -38,6 +38,7 @@ void PrintArray(string[] array)
     }
     else
     {
+        Console.WriteLine($"Result array (words are less or equal than {maxWordLength} symbols)");
         for (int i = 0; i < array.Length - 1; i++)
         {
             System.Console.Write(array[i] + ", ");
