@@ -63,10 +63,12 @@ void Start()
         switch (NumTask)
         {
             case 0: return; break;
-            case 1: DoubleArr(); break;
-            case 2: GetNumberIndex(); break;
-            case 3: columnSum(); break;
+            case 1: PrintArray(GetShortWordArray(arr1)); break;
+            case 2: PrintArray(GetShortWordArray(arr2)); break;
+            case 3: PrintArray(GetShortWordArray(arr3)); break;
             default: System.Console.WriteLine("Enter number of array or 0"); break; 
         }
     }
 }
+
+Start();
