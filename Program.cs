@@ -29,3 +29,19 @@ string[] GetShortWordArray(string[] array)
 
     return result;
 }
+
+void PrintArray(string[] array)
+{
+    if (array.Length == 0)
+    {
+        Console.WriteLine("Array is empty");
+    }
+    else
+    {
+        for (int i = 0; i < array.Length - 1; i++)
+        {
+            System.Console.Write(array[i] + ", ");
+        }
+        System.Console.Write(array[array.Length - 1]);
+    }
+}
