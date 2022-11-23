@@ -45,3 +45,28 @@ void PrintArray(string[] array)
         System.Console.Write(array[array.Length - 1]);
     }
 }
+
+void Start()
+{
+    while(true)
+    {
+        Console.ReadLine();
+        Console.Clear();
+
+        System.Console.WriteLine("Choose array: ");
+        System.Console.WriteLine("Array 1. [“Hello”, “2”, “world”, “:-)”]");
+        System.Console.WriteLine("Array 2. [“1234”, “1567”, “-2”, “computer science”]");
+        System.Console.WriteLine("Array 3. [“Russia”, “Denmark”, “Kazan”]");
+        System.Console.WriteLine("Enter 0 to end");
+
+        int NumTask = int.Parse(Console.ReadLine());
+        switch (NumTask)
+        {
+            case 0: return; break;
+            case 1: DoubleArr(); break;
+            case 2: GetNumberIndex(); break;
+            case 3: columnSum(); break;
+            default: System.Console.WriteLine("Enter number of array or 0"); break; 
+        }
+    }
+}
